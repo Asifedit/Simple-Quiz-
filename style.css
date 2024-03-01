@@ -1,0 +1,137 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    font-size: 15pt;
+    margin: 0;
+    padding: 0;
+    background: #8E8E8E;
+}
+ .app{
+     position: relative;
+     background:#fff ;
+     width: 90%;
+     margin: 10% auto;
+     max-width: 600px;
+     border-radius: 10px;
+     padding: 30px;
+ }
+ .app h1{
+     color: #1EFAEF;
+     font-weight: 25px;
+     border-bottom: 2px solid #0035FF;
+     text-shadow: 2.5px 2.5px 3px #262626;
+     padding-bottom: 30px;
+ }
+   .quiz{
+       padding: 8px 0px;
+   }
+ .quiz h2{
+     color: #25A986;
+     font-size: 23px;
+     font-weight: 600;
+     padding: 10px 0px 20px 10px;
+ }
+ .btn{
+     background: #fff;
+     color: #000000;
+     font-weight: 500;
+     font-size: 23px;
+     width: 100%;
+     border: 1px solid #7C7272;
+     padding: 20px;
+     margin: 10px 0;
+     text-align: left;
+     border-radius: 10px;
+     cursor: pointer;
+     
+ }
+ #next-btn{
+     background: #F5007D;
+     font-size: 30px;
+     padding: 10px 50px ;
+     margin: 20px auto;
+     border: 0px;
+     box-shadow: 0px 0px 10px  #00FFD9;
+     border-radius: 20px;
+     cursor: pointer;
+     display: none;
+     color: #FFFFFF;
+ }
+ #showScor{
+     text-shadow: 1px 1px 1px  #00E8FF;
+     position: absolute;
+     right: 60px;
+     top: 40px;
+     font-size: 25px;
+ }
+ .correct{
+     background: #3CD86317;
+     border: 2.5px dashed #259FAB;
+     color: #009CFF;
+     box-shadow: 0px 0px 4px #9D9D9D;
+     font-size: 21px;
+ }
+ .incorrect{
+     border: 2.5px dashed #FD0000;
+     color: #FF0040;
+     background: #FF000030;
+     animation :  incorrect  0.2s 0.2s 2 ;
+     /* text-decoration: line-through 0.9px  #4AFF00; */
+ }
+ .QuestionEnd{
+         color: #004FFF;
+         font-size: 18px;
+         
+ }
+ .QuestionEnd li{
+   list-style: none;
+   padding: 15px 0px 5px 0px;
+   border-bottom: 1px solid #0036FF;
+   font-size: 17px;
+   color: #EB00D1;
+   
+ }
+ .QuestionEnd li span{
+         color: #074BF1;
+ }
+ @keyframes incorrect{
+     0%{transform: rotate(2deg) }
+     33%{transform: rotate(-2deg)}
+     66%{transform: rotate(2deg)}
+     100%{transform: rotate(-2deg)}
+ }
+ .text{
+     position: absolute;
+ }
+ #showScor{
+     color: #0459F7;
+ }
+ @media only screen and (max-width: 600px) {
+   #showScor{
+     right: 20px;
+     top: 50px;
+     font-size: 15px;
+     }
+   .app{
+     width: 80%;
+     padding: 20px;
+    }
+   .app h1{
+     font-size: 20px;
+     font-weight:2px ;
+     }
+   .app h2{
+       font-size: 18px;
+     }
+  .btn {
+     font-size: 15px;
+     padding: 15px;
+     margin: 5px 0;
+     }
+ #next-btn {
+     font-size: 18px;
+     padding: 10px 50px ;
+ }
+ }
